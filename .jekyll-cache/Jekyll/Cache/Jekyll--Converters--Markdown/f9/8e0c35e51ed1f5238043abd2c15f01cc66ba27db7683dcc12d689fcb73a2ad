@@ -1,0 +1,446 @@
+I"GA<div id="hero-section">
+  <div class="container content-space-t-2">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="mb-5">
+            <h1 class="display-4 text-dark mb-5">¡Ven y celebra con nosotros dos!</h1>
+              <p class="fs-3">Estamos muy contentos de que estés aquí para poder contarte todos los detalles de nuestra boda.</p>
+          </div>
+
+          <div class="d-grid d-sm-flex gap-3 mb-5">
+            <a class="btn btn-primary" href="/paginas/formulario-registro.html">Confirmar asistencia</a>
+            <a class="btn btn-ghost-dark btn-pointer" href="\#lista-hoteles">Ver hoteles cercanos</a>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-6">
+          <!-- Swiper Main -->
+          <div class="js-swiper-pagination-progress-with-thumbs-main swiper mb-5">
+            <div class="swiper-wrapper">
+              
+                
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="/galeria/carrusel/1.png" alt="Imagen carrusel 1" />
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="/galeria/carrusel/2.png" alt="Imagen carrusel 2" />
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="/galeria/carrusel/3.png" alt="Imagen carrusel 3" />
+                  </div>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            </div>
+          </div>
+          <!-- End Swiper Main -->
+
+          <!-- Swiper Thumbs -->
+          <div class="js-swiper-pagination-progress-with-thumbs swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+            </div>
+          </div>
+          <!-- End Swiper Thumbs -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+  </div>
+
+<p><!-- ========== END HERO SECTION ========== --></p>
+
+<div id="mapa" class="bg-dark">
+  <div class="container content-space-t-2">
+    <!-- Heading -->
+    <div class="text-center mx-lg-auto">
+      <h2 class="text-white">Lugar de celebración</h2>
+      <p class="fs-3 text-white">
+        La ceremonia se celebrará en la <b>Parroquia Santa María de Caná</b> de Pozuelo de Alarcón y el posterior banquete tendrá lugar en <b>Finca Las Jarillas</b> en Madrid.
+      </p>
+    </div>
+    <!-- End Heading -->
+
+    <div class="row justify-content-lg-between align-items-lg-center">
+      
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="ratio ratio-16x9">
+          <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d878.184098662612!2d-3.7998433738211235!3d40.43457430474152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4186415716a5a1%3A0xba88876cc831beec!2sParroquia%20Santa%20Mar%C3%ADa%20de%20Can%C3%A1!5e1!3m2!1ses!2ses!4v1746205699524!5m2!1ses!2ses" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="ratio ratio-16x9">
+          <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117182.18917262406!2d-3.8608358811636907!3d40.573086900000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422ad3a2de4be9%3A0x3bb426869bee2921!2sFinca%20Las%20Jarillas!5e1!3m2!1ses!2ses!4v1746205941306!5m2!1ses!2ses" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container content-space-t-2"></div>
+</div>
+
+<!-- End Map -->
+<div id="time-left">
+  <div class="hero" style="background-image: url('/galeria/cuenta_atras.jpg');">
+      <div class="hero-content rounded-3 bg-white bg-opacity-75 p-5 text-center">
+          <!-- <h1 class="display-4">Boda de Bea y Pablo</h1> -->
+          <div class="js-countdown row">
+          <div class="col-3">
+              <h2 class="js-cd-days h1 text-primary mb-0"></h2>
+              <h5 class="mb-0">Días</h5>
+          </div>
+          <!-- End Col -->
+          <div class="col-3">
+              <h2 class="js-cd-hours h1 text-primary mb-0"></h2>
+              <h5 class="mb-0">Horas</h5>
+          </div>
+          <!-- End Col -->
+          <div class="col-3">
+              <h2 class="js-cd-minutes h1 text-primary mb-0"></h2>
+              <h5 class="mb-0">Minutos</h5>
+          </div>
+          <!-- End Col -->
+          <div class="col-3">
+              <h2 class="js-cd-seconds h1 text-primary mb-0"></h2>
+              <h5 class="mb-0">Segundos</h5>
+          </div>
+          <!-- End Col -->
+          </div>
+          <!-- End Row -->
+          <p class="lead mt-3" id="FechaBoda"></p>
+      </div>
+  </div>
+</div>
+
+<div id="dia-boda">
+    <div class="container content-space-t-2">
+      <div class="w-lg-65 text-center mx-lg-auto">
+        <h2>Día de la boda</h2>
+        <p>Estamos encantados de compartir contigo los detalles de nuestro día especial. A continuación, encontrarás el horario de la celebración y los momentos que hemos preparado con tanto cariño para disfrutar juntos.</p>
+      </div>
+
+      <div class="w-lg-75 mx-lg-auto">
+        <!-- List Timeline -->
+        <ul class="list-unstyled list-timeline list-py-3">
+          
+          
+          <li class="list-timeline-item-m ">
+            <a class="card card-sm card-transition-zoom" href="#">
+              <div class="card-transition-zoom-item">
+                <img class="card-img" src="/galeria/dia-boda/iglesia.jpg" alt="Image Description" />
+              </div>
+              <div class="card-img-overlay top-auto">
+                <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
+                  <h4 class="card-title"><span class="fs-2 text-primary">01.</span> Ceremonia</h4>
+                  
+                  <p class="card-text">La misa dará comienzo a las 13:30 en la Parroquia de Santa María de Caná en Pozuelo de Alarcón.</p>
+                  
+                </div>
+              </div>
+            </a>
+          </li>
+          
+          
+          <li class="list-timeline-item-m ms-auto">
+            <a class="card card-sm card-transition-zoom" href="#">
+              <div class="card-transition-zoom-item">
+                <img class="card-img" src="/galeria/dia-boda/autobus.jpg" alt="Image Description" />
+              </div>
+              <div class="card-img-overlay top-auto">
+                <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
+                  <h4 class="card-title"><span class="fs-2 text-primary">02.</span> Buses a la finca</h4>
+                  
+                  <p class="card-text">Al terminar la misa, habrá una flota de autobuses esperando para llevaros a todos a la finca.</p>
+                  
+                </div>
+              </div>
+            </a>
+          </li>
+          
+          
+          <li class="list-timeline-item-m ">
+            <a class="card card-sm card-transition-zoom" href="#">
+              <div class="card-transition-zoom-item">
+                <img class="card-img" src="/galeria/dia-boda/aperitivo.jpg" alt="Image Description" />
+              </div>
+              <div class="card-img-overlay top-auto">
+                <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
+                  <h4 class="card-title"><span class="fs-2 text-primary">03.</span> Aperitivo en jardines</h4>
+                  
+                </div>
+              </div>
+            </a>
+          </li>
+          
+          
+          <li class="list-timeline-item-m ms-auto">
+            <a class="card card-sm card-transition-zoom" href="#">
+              <div class="card-transition-zoom-item">
+                <img class="card-img" src="/galeria/dia-boda/banquete.jpg" alt="Image Description" />
+              </div>
+              <div class="card-img-overlay top-auto">
+                <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
+                  <h4 class="card-title"><span class="fs-2 text-primary">04.</span> Banquete</h4>
+                  
+                </div>
+              </div>
+            </a>
+          </li>
+          
+          
+          <li class="list-timeline-item-m ">
+            <a class="card card-sm card-transition-zoom" href="#">
+              <div class="card-transition-zoom-item">
+                <img class="card-img" src="/galeria/dia-boda/fiesta-2.jpg" alt="Image Description" />
+              </div>
+              <div class="card-img-overlay top-auto">
+                <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
+                  <h4 class="card-title"><span class="fs-2 text-primary">05.</span> Fiesta</h4>
+                  
+                </div>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+        <!-- End List Timeline -->
+      </div>
+    </div>
+  </div>
+<p><!-- End Dia Boda --></p>
+
+<div id="lista-hoteles" class="bg-dark"> 
+  <!-- Hero -->
+  <div class="overflow-hidden">
+    <div class="container content-space-t-2">
+      <div class="w-lg-65 text-center mx-lg-auto">
+        <h2 class="text-white">Hoteles y apartamentos</h2>
+        <p class="text-white">Para facilitar la búsqueda de alojamiento, te compartimos una selección de hoteles que quedan cerca del pazo. Además, en algunos de ellos hemos conseguido un descuento específico para el fin de semana de la boda.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero -->
+
+  <!-- Card Grid -->
+  <div class="container">
+    <div class="row justify-content-lg-between">
+      <div class="col-md-7">
+        <!-- Swiper Slider -->
+        <div class="swiper-center-mode-end text-center mb-3">
+          <div class="js-swiper-card-grid swiper swiper-equal-height ps-4">
+            <div class="swiper-wrapper" id="hoteles">
+              <div class="text-center p-4 bg-info rounded-3 w-100">
+                <div class="mb-4">
+                  <h3 class="mb-1">Error al cargar los hoteles</h3>
+                  <p>Prueba a refrescar la página para verlos correctamente</p>
+                </div>
+                <a class="btn btn-primary" href="javascript:location.reload();window.location.hash='lista-hoteles'">Refrescar la página</a>
+              </div>
+            </div>
+
+            <div id="arrows" style="display: none;">
+              <!-- Arrows -->
+              <div class="js-swiper-card-grid-button-prev swiper-button-prev swiper-static-button-prev"></div>
+              <div class="js-swiper-card-grid-button-next swiper-button-next swiper-static-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Swiper Slider -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Row -->
+    <div id="modalesHoteles"></div>
+  </div>
+  <!-- End Card Grid -->
+
+</div>
+
+<div id="lista-novios">
+<div class="container content-space-t-2">
+    <!-- Card Grid -->
+    <div class="overflow-hidden">
+            <!-- Heading -->
+            <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
+                <h1>Participa en nuestra historia</h1>
+                <!-- <p>Para nosotros lo más importante es tú compañía en nuestro día más especial. Si de todas formas quieres formar parte del inicio de nuestra aventura, estas son algunas experiencias y colaboraciones en las que nos puedes ayudar.</p> -->
+                <p>Esta sección es nuestra lista de bodas. Si quieres te la puedes saltar, porque para nosotros los más importante es contar con tu presencia. Si de todas formas quieres hacernos un regalo para que empecemos nuestra aventura juntos, te dejamos algunas sugerencias.</p>
+                <h6>¡Contribuye al regalo que quieras!</h6>
+            </div>
+            <!-- End Heading -->
+
+            <div class="row justify-content-center" id="regalos">
+                <div class="text-center p-4 bg-info rounded-3 mb-5 w-65" id="RecargarRegalos">
+                    <div class="mb-4">
+                        <h3 class="mb-1">Error al cargar la lista</h3>
+                        <p>Prueba a refrescar la página para verla correctamente</p>
+                    </div>
+                    <a class="btn btn-primary" href="javascript:location.reload();window.location.hash='lista-novios'">Refrescar la página</a>
+                </div>
+            </div>
+            <!-- End Row -->
+
+    </div>
+    <!-- End Card Grid -->
+</div>
+</div>
+:ET
