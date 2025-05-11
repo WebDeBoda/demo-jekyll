@@ -1,0 +1,29 @@
+{% if page.mapa %}
+<div id="mapa" class="bg-dark">
+  <div class="container content-space-t-2">
+    <!-- Heading -->
+    <div class="text-center mx-lg-auto">
+      <h2 class="text-white">{{ page.mapa.title }}</h2>
+      <p class="fs-3 text-white">
+        {{ page.mapa.description }}
+      </p>
+    </div>
+    <!-- End Heading -->
+
+    <div class="row justify-content-lg-between align-items-lg-center">
+      {% for location in page.mapa.locations %}
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="ratio ratio-16x9">
+          <iframe class="rounded" 
+            src="{{ location.src }}" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="container content-space-t-2"></div>
+</div>
+{% endif %}
+<!-- End Map -->

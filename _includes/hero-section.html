@@ -1,0 +1,99 @@
+<div id="hero-section">
+  <div class="container content-space-t-2">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="mb-5">
+            <h1 class="display-4 text-dark mb-5">{{ page.hero-section.title }}</h1>
+              <p class="fs-3">{{ page.hero-section.subtitle }}</p>
+          </div>
+
+          <div class="d-grid d-sm-flex gap-3 mb-5">
+            <a class="btn btn-primary" href="{{ page.hero-section.main-button.href }}">{{ page.hero-section.main-button.text }}</a>
+            <a class="btn btn-ghost-dark btn-pointer" href="{{ page.hero-section.secondary-button.href }}">{{ page.hero-section.secondary-button.text }}</a>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-6">
+          <!-- Swiper Main -->
+          <div class="js-swiper-pagination-progress-with-thumbs-main swiper mb-5">
+            <div class="swiper-wrapper">
+              {% for image in site.static_files %}
+                {% if image.path contains '/galeria/carrusel/' %}
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="{{ image.path }}" alt="Imagen carrusel {{ forloop.index }}">
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <!-- End Swiper Main -->
+
+          <!-- Swiper Thumbs -->
+          <div class="js-swiper-pagination-progress-with-thumbs swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+              <!-- Slide -->
+              <div class="swiper-slide swiper-pagination-progress">
+                <div class="swiper-pagination-progress-body mb-4">
+                  <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                </div>
+              </div>
+              <!-- End Slide -->
+            </div>
+          </div>
+          <!-- End Swiper Thumbs -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+  </div>
+
+  <!-- ========== END HERO SECTION ========== -->

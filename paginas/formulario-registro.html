@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Boda María y José</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="/assets/css/theme.css">
+
+  <!-- JS Cargar Formulario -->
+  <script src="/assets/js/formulario.js"></script>
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+
+</head>
+
+<body class="bg-light">
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Content -->
+    <div class="container content-space-2 content-space-lg-3">
+      <!-- Header -->
+      <div class="text-center mb-7">
+        <div class="mb-3">
+          <a class="link link-secondary" href="/"><i class="bi-arrow-left small me-1"></i>Atrás</a>
+        </div>
+        <h1>Confirmar Asistencia</h1>
+      </div>
+      <!-- End Header -->
+
+      <div class="w-lg-75 mx-lg-auto">
+        <!-- Card -->
+        <div class="card card-shadow">
+          <div class="card-body p-sm-7 p-md-10">
+            <form id="FormNumeroPersonas" onsubmit="return false;">
+
+              <!-- Número de personas -->
+              <div class="mb-4">
+                <label class="form-label" for="forNumPersonas">¿Cuántas personas vais a venir a la boda?</label>
+                <select class="form-select" name="FormNameNumPersonas" id="forNumPersonas">
+                  <option selected="" value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <!-- Select -->
+              <!-- End Select -->
+              <!-- End Número de personas-->
+
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary btn-lg" id="botonConfirmarNumeroPersonas" onclick="cargarFormulario()">Aceptar</button>
+              </div>
+
+            </form>
+
+            <form id="FormInvitados" method="GET" style="display: none;">
+              <!-- Contenedor de preguntas -->
+              <div id="contenedor-formulario"></div>
+              <!-- End Contenedor de preguntas-->
+
+              <!-- reCAPTCHA -->
+              <div class="d-grid">
+                <div class="g-recaptcha" data-sitekey="6LdnnSgrAAAAAIIdDnW8BuslrqHhPufcZMAE4t1H"></div>
+              </div>
+              <!-- End reAPTHCA -->
+
+              <!-- Botón Confirmar -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg" id="botonConfirmarAsistencia">Confirmar asistencia</button>
+              </div>
+              <!-- End Botón Confirmar-->
+
+              <!-- Loader -->
+              <div class="loader-overlay" id="loader">
+                <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Cargando...</span>
+                    </div>
+                </div>
+              </div>
+              <!-- End Loader -->
+
+            </form>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+
+  <!-- GUARDAR INFORMACION INTRODUCIDA -->
+  <script>
+    document.getElementById('FormInvitados').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        guardarInformacion();
+
+    });
+  </script>
+  <!-- END GUARDAR INFORMACION INTRODUCIDA -->
+
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+
+  <!-- JS Unify -->
+  <script src="/assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+</html>

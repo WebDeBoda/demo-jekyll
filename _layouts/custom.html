@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse/papaparse.min.js"></script>
+  <script src="{{ '/assets/js/procesar_csvs.js' | relative_url }}"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="{{ '/assets/vendor/bootstrap-icons/font/bootstrap-icons.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/vendor/swiper/swiper-bundle.min.css' | relative_url }}">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+</head>
+<body>
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light navbar-absolute-top navbar-show-hide bg-white"
+          data-hs-header-options='{
+            "fixMoment": 0,
+            "fixEffect": "slide"
+          }'>
+    {% include header.html %}
+  </header>
+   <main id="content" role="main">
+    {{ content }}
+  </main>
+  <footer id="footer" class="bg-dark">
+    {% include footer.html %}
+  </footer>
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="{{ '/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ '/assets/vendor/hs-header/dist/hs-header.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/hs-go-to/dist/hs-go-to.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/swiper/swiper-bundle.min.js' | relative_url }}"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ '/assets/js/theme.min.js' | relative_url }}"></script>
+
+  <!-- JS Countdown -->
+  <script src="{{ '/assets/vendor/countdown/countdown.js' | relative_url }}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF NAVBAR
+      // =======================================================
+      new HSHeader('#header').init()
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      const megaMenu = new HSMegaMenu('.js-mega-menu', {
+        desktop: {
+          position: 'left'
+        }
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+  <!-- JS Plugins Init. -->
+<!-- 
+Este script está diseñado para gestionar la galería de la sección hero. 
+Proporciona funcionalidad para mostrar y navegar entre las imágenes destacadas 
+de la sección principal del sitio web, mejorando la experiencia visual del usuario.
+-->
+<script>
+  (function() {
+    // INITIALIZATION OF SWIPER
+    // =======================================================
+    var paginationProgressWithThumbsThumbs = new Swiper('.js-swiper-pagination-progress-with-thumbs', {
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      history: false,
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: {{ site.static_files | where_exp: "file", "file.path contains '/galeria/carrusel/'" | size }},
+          spaceBetween: 15,
+        }
+      },
+      on: {
+        'afterInit': function (swiper) {
+          swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
+          .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
+        }
+      }
+    });
+
+    var paginationProgressWithThumbsMain = new Swiper('.js-swiper-pagination-progress-with-thumbs-main', {
+      effect: 'fade',
+      autoplay: true,
+      loop: true,
+      thumbs: {
+        swiper: paginationProgressWithThumbsThumbs
+      }
+    })
+  })()
+</script>
+<!-- 
+Este script se utiliza para inicializar una cuenta atrás. 
+Se encarga de configurar y gestionar el temporizador que cuenta hacia atrás desde un tiempo específico.
+-->
+<script>
+    (function() {
+      // INITIALIZATION OF COUNTDOWN
+      // =======================================================
+    const fechaReferencia = new Date("{{ page.time-left.wedding-date | date: '%Y-%m-%dT%H:%M:%S' }}").getTime();
+
+      const fechaBoda = new Date(fechaReferencia);
+      const opcionesFecha = { day: 'numeric', month: 'long', year: 'numeric' };
+      document.getElementById('FechaBoda').textContent = fechaBoda.toLocaleDateString('es-ES', opcionesFecha);
+
+      document.querySelectorAll('.js-countdown').forEach(item => {
+        const days = item.querySelector('.js-cd-days'),
+          hours = item.querySelector('.js-cd-hours'),
+          minutes = item.querySelector('.js-cd-minutes'),
+          seconds = item.querySelector('.js-cd-seconds')
+
+        countdown(fechaReferencia,
+          ts => {
+            days.innerHTML = ts.days
+            hours.innerHTML = ts.hours
+            minutes.innerHTML = ts.minutes
+            seconds.innerHTML = ts.seconds
+          },
+          countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS
+        )
+      })
+    })()
+  </script>
+</body>
+</html>

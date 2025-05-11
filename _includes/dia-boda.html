@@ -1,0 +1,36 @@
+{% if page.dia-boda %}
+  <div id="dia-boda">
+    <div class="container content-space-t-2">
+      <div class="w-lg-65 text-center mx-lg-auto">
+        <h2>{{ page.dia-boda.title }}</h2>
+        <p>{{ page.dia-boda.description }}</p>
+      </div>
+
+      <div class="w-lg-75 mx-lg-auto">
+        <!-- List Timeline -->
+        <ul class="list-unstyled list-timeline list-py-3">
+          {% for event in page.dia-boda.events %}
+          {% assign mod = forloop.index0 | modulo: 2 %}
+          <li class="list-timeline-item-m {% if mod == 1 %}ms-auto{% endif %}">
+            <a class="card card-sm card-transition-zoom" href="#">
+              <div class="card-transition-zoom-item">
+                <img class="card-img" src="{{ event.image }}" alt="Image Description">
+              </div>
+              <div class="card-img-overlay top-auto">
+                <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
+                  <h4 class="card-title"><span class="fs-2 text-primary">{{ forloop.index | prepend: '0' }}.</span> {{ event.title }}</h4>
+                  {% if event.time %}
+                  <p class="card-text">{{ event.time }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- End List Timeline -->
+      </div>
+    </div>
+  </div>  
+  <!-- End Dia Boda -->
+{% endif %}

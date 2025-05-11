@@ -1,0 +1,46 @@
+<div id="lista-hoteles" class="bg-dark"> 
+  <!-- Hero -->
+  <div class="overflow-hidden">
+    <div class="container content-space-t-2">
+      <div class="w-lg-65 text-center mx-lg-auto">
+        <h2 class="text-white">Hoteles y apartamentos</h2>
+        <p class="text-white">Para facilitar la búsqueda de alojamiento, te compartimos una selección de hoteles que quedan cerca del pazo. Además, en algunos de ellos hemos conseguido un descuento específico para el fin de semana de la boda.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero -->
+
+  <!-- Card Grid -->
+  <div class="container">
+    <div class="row justify-content-lg-between">
+      <div class="col-md-7">
+        <!-- Swiper Slider -->
+        <div class="swiper-center-mode-end text-center mb-3">
+          <div class="js-swiper-card-grid swiper swiper-equal-height ps-4">
+            <div class="swiper-wrapper" id="hoteles">
+              <div class="text-center p-4 bg-info rounded-3 w-100">
+                <div class="mb-4">
+                  <h3 class="mb-1">Error al cargar los hoteles</h3>
+                  <p>Prueba a refrescar la página para verlos correctamente</p>
+                </div>
+                <a class="btn btn-primary" href="javascript:location.reload();window.location.hash='lista-hoteles'">Refrescar la página</a>
+              </div>
+            </div>
+
+            <div id="arrows" style="display: none;">
+              <!-- Arrows -->
+              <div class="js-swiper-card-grid-button-prev swiper-button-prev swiper-static-button-prev"></div>
+              <div class="js-swiper-card-grid-button-next swiper-button-next swiper-static-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Swiper Slider -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Row -->
+    <div id="modalesHoteles"></div>
+  </div>
+  <!-- End Card Grid -->
+
+</div>
