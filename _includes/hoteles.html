@@ -18,13 +18,9 @@
         <div class="swiper-center-mode-end text-center mb-3">
           <div class="js-swiper-card-grid swiper swiper-equal-height ps-4">
             <div class="swiper-wrapper" id="hoteles">
-              <div class="text-center p-4 bg-info rounded-3 w-100">
-                <div class="mb-4">
-                  <h3 class="mb-1">Error al cargar los hoteles</h3>
-                  <p>Prueba a refrescar la página para verlos correctamente</p>
-                </div>
-                <a class="btn btn-primary" href="javascript:location.reload();window.location.hash='lista-hoteles'">Refrescar la página</a>
-              </div>
+              {% for hotel in site.data.hoteles %}
+    
+              {% endfor %}
             </div>
 
             <div id="arrows" style="display: none;">

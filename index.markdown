@@ -22,23 +22,26 @@ mapa:
 time-left:
     background-image: /galeria/cuenta_atras.jpg
     # wedding-date: "2025-05-11T00:00:00"
-    wedding-date: "2025-05-11T00:00:00"
+    wedding-date: "2026-05-11T13:00:00"
 
 dia-boda:
     title: Día de la boda
     description: Estamos encantados de compartir contigo los detalles de nuestro día especial. A continuación, encontrarás el horario de la celebración y los momentos que hemos preparado con tanto cariño para disfrutar juntos.
     events:
         - title: Ceremonia
-          time: "La misa dará comienzo a las 13:30 en la Parroquia de Santa María de Caná en Pozuelo de Alarcón."
+          text: "La misa dará comienzo a las 13:30 en la Parroquia de Santa María de Caná en Pozuelo de Alarcón."
           image: /galeria/dia-boda/iglesia.jpg
         - title: Buses a la finca
-          time: "Al terminar la misa, habrá una flota de autobuses esperando para llevaros a todos a la finca."
+          text: "Al terminar la misa, habrá una flota de autobuses esperando para llevaros a todos a la finca."
           image: /galeria/dia-boda/autobus.jpg
         - title: Aperitivo en jardines
+          text: "Comenzaremos la celebración disfrutando de un aperitivo en los jardines de la finca."
           image: /galeria/dia-boda/aperitivo.jpg
         - title: Banquete
+          text: "Tras el aperitivo nos dirigiremos a la zona de banquete para disfrutar de la comida."
           image: /galeria/dia-boda/banquete.jpg
         - title: Fiesta
+          text: "Esperamos que hayas cogido energía en la comida porque te queremos dándolo todo en la pista de baile."
           image: /galeria/dia-boda/fiesta-2.jpg
 
 hoteles:

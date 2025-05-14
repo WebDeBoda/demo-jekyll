@@ -19,8 +19,8 @@
               <div class="card-img-overlay top-auto">
                 <div class="d-flex justify-content-end flex-column bg-white rounded-3 p-4">
                   <h4 class="card-title"><span class="fs-2 text-primary">{{ forloop.index | prepend: '0' }}.</span> {{ event.title }}</h4>
-                  {% if event.time %}
-                  <p class="card-text">{{ event.time }}</p>
+                  {% if event.text %}
+                  <p class="card-text">{{ event.text }}</p>
                   {% endif %}
                 </div>
               </div>
