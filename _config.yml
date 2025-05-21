@@ -15,3 +15,7 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-admin
+
+# Datos económicos
+IBAN: "ES00 1111 2222 3333 4444 5555"
+codigo_bic: AABBCCD2

@@ -1,4 +1,3 @@
-
 <div id="lista-novios">
 <div class="container content-space-t-2">
     <!-- Card Grid -->
@@ -13,13 +12,83 @@
             <!-- End Heading -->
 
             <div class="row justify-content-center" id="regalos">
-                <div class="text-center p-4 bg-info rounded-3 mb-5 w-65" id="RecargarRegalos">
-                    <div class="mb-4">
-                        <h3 class="mb-1">Error al cargar la lista</h3>
-                        <p>Prueba a refrescar la página para verla correctamente</p>
-                    </div>
-                    <a class="btn btn-primary" href="javascript:location.reload();window.location.hash='lista-novios'">Refrescar la página</a>
+                
+                <!-- Cargar las secciones de forma dinámica -->
+                {% assign secciones = site.data.regalos | map: "seccion" | uniq %}
+                {% for seccion in secciones %}
+
+                    <!-- Título de la sección -->
+                    <!-- Sección -->
+                    <div class="text-center mx-lg-auto">
+                        <h3 class="divider-center mb-5">{{seccion}}</h3>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-7 justify-content-center">
+
+                    <!-- Se itera sobre los regalos que pertenecen a la sección actual -->
+                    {% assign regalos = site.data.regalos | where: "seccion", seccion %}
+                    {% for regalo in regalos %}
+
+                        <!-- Col -->
+                        <div class="col mb-7 mb-md-10">
+                            <!-- Card -->
+                            <div class="card card-ghost card-transition-zoom h-100">
+                                <a data-bs-toggle="collapse" href="#R{{regalo.id}}IBAN" role="button" onclick="document.getElementById('R{{regalo.id}}Imagen').scrollIntoView({ behavior: 'smooth'});">
+                                    <!-- Foto -->
+                                    <div class="card-pinned card-transition-zoom-item" id="R{{regalo.id}}Imagen" >
+                                        <img class="card-img" src="{{regalo.imagen}}" alt="Image Description">
+                                    </div>
+                                    <!-- Texto -->
+                                    <div class="card-body">
+                                        <h4>{{regalo.nombre}}</h4>
+                                        <p class="card-text">{{regalo.descripcion}}</p>
+                                    </div>
+                                    {% assign recaudado = regalo.recaudado | plus: 0 | times: 100%}
+                                    {% assign coste = regalo.coste | plus: 0 %}
+                                    {% assign porcentaje_recaudado = recaudado | divided_by: coste  | round %}
+                                    <!-- Barra de progreso -->
+                                    <div class="progress mb-3" style="height: 15px;">
+                                        <div  class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:{{porcentaje_recaudado}}%">{{ porcentaje_recaudado }}%</div>
+                                    </div>
+                                    <!-- Participa -->
+                                    <div class="card-footer text-start">
+                                        <span class="card-link">Regalar</span>
+                                    </div>
+                                </a>
+                                <!-- End Card -->
+                                <!-- IBAN -->
+                                <div class="collapse mt-5" id="R{{regalo.id}}IBAN">
+                                    <div class="alert alert-soft-primary" role="alert">
+                                        <b>IBAN:</b> {{ site.IBAN }}
+                                        <br>
+                                        <b>Código BIC/SWIFT:</b> {{ site.codigo_bic }}
+                                        <br>
+                                        <b>Concepto:</b> {{regalo.nombre}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Col -->
+
+                    {% endfor %}
                 </div>
+            </div>
+            <!-- End Sección -->
+                {% endfor %}
+            <!-- Sección -->
+        <div class="text-center mx-lg-auto">
+            <h3 class="divider-center mb-5">Transferencia bancaria</h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-7 justify-content-center" id="sec-transferencia"></div>
+        </div>
+        <!-- End Sección -->
+
+        <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
+            <div class="alert alert-soft-primary" role="alert">
+                Si no te convence ninguna de las opciones anteriores pero aún así quieres ayudarnos, puedes hacernos una transferencia bancaria a la siguiente cuenta.
+                <br><br>
+                <h4 style="color: #77BFA3;">{{ site.IBAN }}</h4>
+            </div>
+        </div>
+                
+
             </div>
             <!-- End Row -->
 
