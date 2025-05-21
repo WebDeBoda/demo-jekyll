@@ -1,43 +1,43 @@
 - id: 1
-  nombre: "Eurostars Gran Hotel Santiago"
-  estrellas: 4
-  web: "https://www.eurostarshotels.com/eurostars-gran-hotel-santiago/disponibilidad.html?utm_campaign=googlehpa_es&id_hotel=H233&start=2025-09-12&utm_medium=cpc&promotion_code=BODABYP&guests[0][adults]=2&id_referer=GOOGLEHPA_ES&utm_source=googlehpa&city_id=100159&td=m00ga01&end=2025-09-14&avail_code=GOOGLEHPA_ES&referer_code=GOOGLEHPA_ES#monoHotelAvail/EUR"
+  nombre: "Hyatt Regency Hesperia Madrid"
+  estrellas: 5
+  web: "https://www.hyatt.com/hyatt-regency/en-US/madrm-hyatt-regency-hesperia-madrid"
   distancia_metros: 750
   distancia_tiempo: 11
-  codigo_descuento: "BODABYP"
-  descuento: "15% de descuento con el código BODABYP"
+  codigo_descuento: "BODAMYJ"
+  descuento: "15% de descuento con el código BODAMYJ"
   condiciones: 
   anotaciones: 
   imagen: "/galeria/hoteles/3.jpg"
 
 - id: 2
-  nombre: "Hotel Exe Peregrino"
+  nombre: "Hotel NH Collection Madrid Abascal"
   estrellas: 4
-  web: "https://www.eurostarshotels.com/exe-peregrino/disponibilidad.html?utm_campaign=googlehpa_es&id_hotel=SYN2183&start=2025-09-12&utm_medium=cpc&promotion_code=BODABYP&guests[0][adults]=2&id_referer=GOOGLEHPA_ES&utm_source=googlehpa&city_id=100159&td=m00ga01&end=2025-09-14&avail_code=GOOGLEHPA_ES&referer_code=GOOGLEHPA_ES#monoHotelAvail/EUR"
+  web: "https://www.nh-hotels.com/en/hotel/nh-collection-madrid-abascal"
   distancia_metros: 1100
   distancia_tiempo: 16
-  codigo_descuento: "BODABYP"
-  descuento: "15% de descuento con el código BODABYP"
-  condiciones: "Aplicable hasta el 13 de agosto"
+  codigo_descuento: "BODAMYJ"
+  descuento: "15% de descuento con el código BODAMYJ"
+  condiciones: "En el fin de semana de la boda"
   anotaciones: 
-  imagen: "/galeria/hoteles/2.jpg"
+  imagen: "/galeria/hoteles/2.png"
 
 - id: 3
-  nombre: "Hotel Herradura"
+  nombre: "H-A San Mateo suites"
   estrellas: 3
-  web: "https://www.hotelherradura.es/#formulario"
+  web: "https://sanmateo.ha-hoteles.com/es/"
   distancia_metros: 900
   distancia_tiempo: 14
-  codigo_descuento: "Dar como referencia nuestros nombres “Boda Bea y Pablo - 13 septiembre 2025”"
+  codigo_descuento: "Dar como referencia nuestros nombres “Boda María y José”"
   descuento: "Precios especiales"
   condiciones: 
-  anotaciones: "Se aplicarán las siguientes tarifas, que <b>incluyen desayuno e IVA:</b><ul><li>Habitación doble: 120€</li><li>Habitación individual: 89€</li><li>Cama supletoria: 33€</li></ul>Para ello tendrás que reservar a través del siguiente enlace indicando <b><span class=\"text-primary\">“Boda Bea y Pablo - 13 septiembre 2025”</span></b> en el formulario."
+  anotaciones: "Se aplicarán las siguientes tarifas, que <b>incluyen desayuno e IVA:</b><ul><li>Habitación doble: 120€</li><li>Habitación individual: 89€</li><li>Cama supletoria: 33€</li></ul>Para ello tendrás que reservar a través del siguiente enlace indicando <b><span class=\"text-primary\">“Boda María y José”</span></b> en el formulario."
   imagen: "/galeria/hoteles/6.jpg"
 
 - id: 4
-  nombre: "Hotel San Lorenzo"
-  estrellas: 3
-  web: "https://www.hsanlorenzo.com/es/"
+  nombre: "Novotel Madrid Center"
+  estrellas: 4
+  web: "https://all.accor.com/hotel/9298/index.es.shtml"
   distancia_metros: 500
   distancia_tiempo: 7
   codigo_descuento: 
@@ -45,75 +45,3 @@
   condiciones: 
   anotaciones: 
   imagen: "/galeria/hoteles/5.jpg"
-
-- id: 5
-  nombre: "Hotel Palacio del Carmen"
-  estrellas: 5
-  web: "https://www.marriott.com/es/hotels/scqak-hotel-palacio-del-carmen-autograph-collection/overview/"
-  distancia_metros: 700
-  distancia_tiempo: 9
-  codigo_descuento: 
-  descuento: 
-  condiciones: 
-  anotaciones: 
-  imagen: "/galeria/hoteles/1.jpg"
-
-- id: 6
-  nombre: "Pombal Rooms Santiago"
-  estrellas: 2
-  web: "https://www.gescahoteles.com/pombal-rooms/"
-  distancia_metros: 750
-  distancia_tiempo: 11
-  codigo_descuento:
-  descuento:
-  condiciones:
-  anotaciones:
-  imagen: "/galeria/hoteles/8.jpg"
-
-- id: 7
-  nombre: "Hotel Pazos Alba"
-  estrellas: 2
-  web: "https://hotelpazosalba.com"
-  distancia_metros: 850
-  distancia_tiempo: 12
-  codigo_descuento:
-  descuento:
-  condiciones:
-  anotaciones:
-  imagen: "/galeria/hoteles/9.jpg"
-
-- id: 8
-  nombre: "Lux Apartamentos Santiago"
-  estrellas: 3
-  web: "https://www.gescahoteles.com/lux-apartamentos-santiago/"
-  distancia_metros: 900
-  distancia_tiempo: 13
-  codigo_descuento:
-  descuento:
-  condiciones:
-  anotaciones:
-  imagen: "/galeria/hoteles/4.jpg"
-
-- id: 9
-  nombre: "Lux Apartamentos Rosalía"
-  estrellas: "Apartamentos"
-  web: "https://www.gescahoteles.com/lux-apartamentos-rosalia/"
-  distancia_metros: 900
-  distancia_tiempo: 13
-  codigo_descuento:
-  descuento:
-  condiciones:
-  anotaciones:
-  imagen: "/galeria/hoteles/10.jpg"
-
-- id: 10
-  nombre: "Alameda Rooms"
-  estrellas: 2
-  web: "https://www.gescahoteles.com/alameda-rooms-santiago/"
-  distancia_metros: 1100
-  distancia_tiempo: 16
-  codigo_descuento:
-  descuento:
-  condiciones:
-  anotaciones:
-  imagen: "/galeria/hoteles/7.jpg"
