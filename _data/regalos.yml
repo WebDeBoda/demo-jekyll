@@ -4,14 +4,14 @@
   coste: 4000
   recaudado: 1000
   imagen: "/galeria/regalos/1.jpg"
-  descripcion: "Conocer ciudad más turística de Sudáfrica, desde sus playas de ensueño a las espectaculares vistas de Table Mountain que rodea la ciudad. También nos gustaría incluir una visita a los famosos viñedos de la zona."
+  descripcion: "Conocer la ciudad más turística de Sudáfrica, desde sus playas de ensueño a las espectaculares vistas de Table Mountain que rodea la ciudad. También nos gustaría incluir una visita a los famosos viñedos de la zona."
 - id: 2
   nombre: "Inmersión con tiburón blanco"
   seccion: "Luna de miel"
   coste: 1000
   recaudado: 130
   imagen: "/galeria/regalos/2.png"
-  descripcion: "Todos los que conocéis a Bea sabéis la ilusión que le haría poder ver un tiburón de cerca. En nuestra luna de miel, queremos hacer una inmersión con tiburones blanco para que por fin pueda cumplir su sueño."
+  descripcion: "En nuestra luna de miel nos gustaría vivir una experiencia única: ¡una inmersión con tiburones blancos! No te preocupes, no hay peligro, ¡los tiburones están bien alimentados y no tienen hambre!"
 - id: 3
   nombre: "Avistamiento de ballenas"
   seccion: "Luna de miel"
@@ -33,13 +33,6 @@
   recaudado: 3009
   imagen: "/galeria/regalos/5.jpg"
   descripcion: "Después de un intenso viaje por Sudáfrica nos merecemos un descanso. Nos gustaría relajarnos y disfrutar del sol y del mar en esta isla paradisíaca. Por supuesto, no faltarán deportes acuáticos."
-- id: 6
-  nombre: "Desperfectos de Pipo"
-  seccion: "Nuestra vida juntos"
-  coste: 2000
-  recaudado: 58
-  imagen: "/galeria/regalos/6.jpg"
-  descripcion: "Tener un cachorro en casa el último año no ha sido tarea fácil para nosotros, pero la peor parte se la han llevado nuestros zócalos, sofá, alfombras, mandos ... ¡Ayúdanos a reponerlos!"
 - id: 7
   nombre: "Cámara de fotos"
   seccion: "Nuestra vida juntos"
