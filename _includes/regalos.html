@@ -4,10 +4,9 @@
     <div class="overflow-hidden">
             <!-- Heading -->
             <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
-                <h1>Participa en nuestra historia</h1>
-                <!-- <p>Para nosotros lo más importante es tú compañía en nuestro día más especial. Si de todas formas quieres formar parte del inicio de nuestra aventura, estas son algunas experiencias y colaboraciones en las que nos puedes ayudar.</p> -->
-                <p>Esta sección es nuestra lista de bodas. Si quieres te la puedes saltar, porque para nosotros lo más importante es contar con tu presencia. Si de todas formas quieres hacernos un regalo para que empecemos nuestra aventura juntos, te dejamos algunas sugerencias.</p>
-                <h6>¡Contribuye al regalo que quieras!</h6>
+                <h1>{{page.regalos.title}}</h1>
+                <p>{{page.regalos.description}}</p>
+                <h6>{{page.regalos.aclaracion}}</h6>
             </div>
             <!-- End Heading -->
 
@@ -57,9 +56,9 @@
                                 <!-- IBAN -->
                                 <div class="collapse mt-5" id="R{{regalo.id}}IBAN">
                                     <div class="alert alert-soft-primary" role="alert">
-                                        <b>IBAN:</b> {{ site.IBAN }}
+                                        <b>IBAN:</b> {{ page.regalos.IBAN }}
                                         <br>
-                                        <b>Código BIC/SWIFT:</b> {{ site.codigo_bic }}
+                                        <b>Código BIC/SWIFT:</b> {{ page.regalos.codigo_bic }}
                                         <br>
                                         <b>Concepto:</b> {{regalo.nombre}}
                                     </div>
@@ -84,7 +83,7 @@
             <div class="alert alert-soft-primary" role="alert">
                 Si no te convence ninguna de las opciones anteriores pero aún así quieres ayudarnos, puedes hacernos una transferencia bancaria a la siguiente cuenta.
                 <br><br>
-                <h4 style="color: #77BFA3;">{{ site.IBAN }}</h4>
+                <h4 style="color: #77BFA3;">{{ page.regalos.IBAN }}</h4>
             </div>
         </div>
                 
