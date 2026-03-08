@@ -1,0 +1,215 @@
+/* ============================================
+   SELECTOR FLOTANTE DE TEMA
+   ============================================ */
+
+.theme-selector-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 9999;
+  font-family: var(--bs-body-font-family);
+}
+
+.theme-selector-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary));
+  border: 3px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: white !important;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.theme-selector-toggle i {
+  color: white !important;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.theme-selector-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.theme-selector-toggle.active {
+  transform: rotate(180deg);
+}
+
+.theme-selector-panel {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 320px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.theme-selector-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.theme-selector-panel h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bs-dark);
+  text-align: center;
+}
+
+.theme-presets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.theme-preset {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-preset:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-preset.active {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--bs-primary);
+}
+
+.theme-preset-color {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-preset-color > div {
+  flex: 1;
+}
+
+.theme-preset-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.theme-custom-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.theme-custom-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--bs-dark);
+}
+
+.theme-color-picker-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.theme-color-picker {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  border: 2px solid var(--bs-border-color);
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-color-picker input[type="color"] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.theme-reset-btn {
+  flex: 1;
+  padding: 10px 16px;
+  background: var(--bs-light);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--bs-dark);
+  transition: all 0.2s ease;
+}
+
+.theme-reset-btn:hover {
+  background: var(--bs-primary);
+  color: white;
+  border-color: var(--bs-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .theme-selector-wrapper {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  
+  .theme-selector-toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .theme-selector-panel {
+    width: 280px;
+    bottom: 70px;
+    max-height: 70vh;
+  }
+  
+  .theme-presets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
